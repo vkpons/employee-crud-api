@@ -2,11 +2,23 @@
   "name": "employee-crud-api",
   "version": "1.0.0",
   "description": "Aplicação CRUD API em Node.js que alimentará 2 frameworks",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "lint": "eslint --ext .js -f ./node_modules/eslint-friendly-formatter . --fix"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-promise-router": "^4.1.1",
+    "pg": "^8.11.3"
+  }
 }
